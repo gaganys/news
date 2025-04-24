@@ -210,3 +210,4 @@ D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\zh-Hans\
 D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\AuthWindow.baml
 D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\EditNewsWindow.baml
 D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\EditNewsWindow.g.cs
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\GeneratedInternalTypeHelper.g.cs

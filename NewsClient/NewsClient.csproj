@@ -337,9 +337,11 @@
     <Compile Include="Services\FirebaseAuthService.cs" />
     <Compile Include="Services\FirebaseService.cs" />
     <Compile Include="Services\NewsClient.cs" />
+    <Compile Include="Utility\AppConstants.cs" />
     <Compile Include="Views\AuthWindow.xaml.cs">
       <DependentUpon>AuthWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\BaseWindow.cs" />
     <Compile Include="Views\EditNewsWindow.xaml.cs">
       <DependentUpon>EditNewsWindow.xaml</DependentUpon>
     </Compile>
@@ -389,7 +391,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="credentials\newsdistributionsystem-firebase-adminsdk-fbsvc-f09dc1102d.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -454,6 +455,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="credentials\newsdistributionsystem-firebase-adminsdk-fbsvc-15c304d0b6.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets" Condition="Exists('..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets')" />

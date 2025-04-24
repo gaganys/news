@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Google.Cloud.Firestore.V1;
+using NewsClient.Utility;
 
 namespace NewsClient.Services
 {
@@ -16,49 +17,44 @@ namespace NewsClient.Services
 
         public event Action<NewsItem> NewsPublished;
         public event Action<NewsItem> NewsUpdated;
+        public event Action<string> NewsDeleted;
 
-        public FirebaseService(string projectId)
+        public FirebaseService(string projectId, Client client)
         {
             var firestoreClient = new FirestoreClientBuilder
             {
-                CredentialsPath = "D:\\КурсоваяКСиС\\NewsDistributionSystem\\NewsClient\\credentials\\newsdistributionsystem-firebase-adminsdk-fbsvc-f09dc1102d.json"
+                CredentialsPath = AppConstants.CredentialsPath
             }.Build();
 
             _firestoreDb = FirestoreDb.Create(projectId, firestoreClient);
-            _client = new Client("localhost", 8080);
-            _ = _client.ConnectAsync();
+            _client = client;
 
+            // Подписка на события WebSocket
+            _client.NewsPublished += OnNewsPublished;
+            _client.NewsUpdated += OnNewsUpdated;
+            _client.NewsDeleted += OnNewsDeleted;
         }
+        
+        private void OnNewsPublished(NewsItem news) => NewsPublished?.Invoke(news);
+        private void OnNewsUpdated(NewsItem news) => NewsUpdated?.Invoke(news);
+        private void OnNewsDeleted(string docId) => NewsDeleted?.Invoke(docId);
 
         public async Task<NewsItem> AddNewsItemAsync(NewsItem item)
         {
             item.PublishDate = DateTime.SpecifyKind(item.PublishDate, DateTimeKind.Utc);
             var docRef = await _firestoreDb.Collection("news").AddAsync(item);
             item.DocumentId = docRef.Id;
+            NewsPublished?.Invoke(item);
             await _client.PublishNewsAsync(item);
 
-            NewsPublished?.Invoke(item);
             return item;
-        }
-
-        public async Task<List<NewsItem>> GetAllNewsAsync()
-        {
-            CollectionReference newsCollection = _firestoreDb.Collection("news");
-            QuerySnapshot snapshot = await newsCollection.GetSnapshotAsync();
-            return snapshot.Documents.Select(d =>
-            {
-                var item = d.ConvertTo<NewsItem>();
-                item.DocumentId = d.Id;
-                return item;
-            }).OrderByDescending(n => n.PublishDate).ToList();
         }
         
         public async Task UpdateNewsAsync(NewsItem newsItem)
         {
             await _firestoreDb.Collection("news").Document(newsItem.DocumentId).SetAsync(newsItem);
-            await _client.UpdateNewsAsync(newsItem);
-
             NewsUpdated?.Invoke(newsItem);
+            await _client.UpdateNewsAsync(newsItem);
         }
 
         public async Task DeleteNewsAsync(string documentId)
@@ -67,21 +63,50 @@ namespace NewsClient.Services
                 throw new ArgumentException("DocumentId is required for delete");
 
             await _firestoreDb.Collection("news").Document(documentId).DeleteAsync();
-            await PublishDelete(documentId); // Notify clients of deletion
+            NewsDeleted?.Invoke(documentId);
+            await _client.DeleteNewsAsync(documentId);
         }
-        
-        private async Task PublishDelete(string documentId)
+
+        public async Task<List<NewsItem>> GetAllNewsAsync()
         {
             try
             {
-                await _client.DeleteNewsAsync(documentId);
+                Console.WriteLine("Запрос новостей из Firestore...");
+                CollectionReference newsCollection = _firestoreDb.Collection("news");
+                QuerySnapshot snapshot = await newsCollection.GetSnapshotAsync();
+
+                if (snapshot == null)
+                {
+                    Console.WriteLine("Snapshot is null");
+                    return new List<NewsItem>();
+                }
+
+                var result = snapshot.Documents.Select(d =>
+                {
+                    try
+                    {
+                        var item = d.ConvertTo<NewsItem>();
+                        item.DocumentId = d.Id;
+                        Console.WriteLine($"Загружена новость: {item.Title} (ID: {item.DocumentId})");
+                        return item;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Ошибка конвертации документа {d.Id}: {ex.Message}");
+                        return null;
+                    }
+                }).Where(x => x != null).ToList();
+
+                Console.WriteLine($"Всего загружено: {result.Count} новостей");
+                return result.OrderByDescending(n => n.PublishDate).ToList();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка при публикации удаления: {ex.Message}");
+                Console.WriteLine($"Ошибка в GetAllNewsAsync: {ex.ToString()}");
+                throw;
             }
         }
-        
+
         public void Dispose()
         {
             Dispose(true);

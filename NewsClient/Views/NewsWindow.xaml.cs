@@ -20,15 +20,21 @@ namespace NewsClient.Views
         public ObservableCollection<NewsItem> AllNewsItems { get; } = new ObservableCollection<NewsItem>();
         public ObservableCollection<NewsItem> UserNewsItems { get; } = new ObservableCollection<NewsItem>();
 
-        public NewsWindow(string userId)
+        public NewsWindow(string userId, FirebaseService firebaseService, Client client)
         {
             InitializeComponent();
             _userId = userId ?? throw new ArgumentNullException(nameof(userId));
+            _firebaseService = firebaseService ?? throw new ArgumentNullException(nameof(firebaseService));
+            _client = client ?? throw new ArgumentNullException(nameof(client));
+            
             DataContext = this;
 
-            _firebaseService = new FirebaseService("newsdistributionsystem");
-            _client = new Client("localhost", 8080);
-
+            // Подписка на события FirebaseService
+            _firebaseService.NewsPublished += OnNewsPublished;
+            _firebaseService.NewsUpdated += OnNewsUpdated;
+            _firebaseService.NewsDeleted += OnNewsDeleted;
+    
+            // Подписка на события WebSocket клиента
             _client.NewsPublished += OnNewsPublished;
             _client.NewsUpdated += OnNewsUpdated;
             _client.NewsDeleted += OnNewsDeleted;
@@ -58,7 +64,16 @@ namespace NewsClient.Views
         {
             try
             {
+                Console.WriteLine("Попытка загрузить новости...");
                 var newsList = await _firebaseService.GetAllNewsAsync();
+        
+                if (newsList == null)
+                {
+                    Console.WriteLine("Получен пустой список новостей");
+                    return;
+                }
+        
+                Console.WriteLine($"Успешно загружено {newsList.Count} новостей");
                 UpdateNewsCollections(newsList);
             }
             catch (Exception ex)
@@ -86,6 +101,7 @@ namespace NewsClient.Views
         {
             Dispatcher.Invoke(() =>
             {
+                // Удаляем если уже существует (на случай дублирования событий)
                 var existing = AllNewsItems.FirstOrDefault(n => n.DocumentId == newsItem.DocumentId);
                 if (existing != null) AllNewsItems.Remove(existing);
                 
@@ -119,7 +135,8 @@ namespace NewsClient.Views
             if (existing != null)
             {
                 var index = collection.IndexOf(existing);
-                collection[index] = updatedItem;
+                collection.RemoveAt(index);
+                collection.Insert(index, updatedItem); // Сохраняем позицию, но обновляем элемент
             }
             else
             {
@@ -131,11 +148,11 @@ namespace NewsClient.Views
         {
             Dispatcher.Invoke(() =>
             {
-                var item = AllNewsItems.FirstOrDefault(n => n.DocumentId == documentId);
-                if (item != null) AllNewsItems.Remove(item);
+                var itemToRemove = AllNewsItems.FirstOrDefault(n => n.DocumentId == documentId);
+                if (itemToRemove != null) AllNewsItems.Remove(itemToRemove);
 
-                item = UserNewsItems.FirstOrDefault(n => n.DocumentId == documentId);
-                if (item != null) UserNewsItems.Remove(item);
+                itemToRemove = UserNewsItems.FirstOrDefault(n => n.DocumentId == documentId);
+                if (itemToRemove != null) UserNewsItems.Remove(itemToRemove);
             });
         }
 
@@ -183,7 +200,7 @@ namespace NewsClient.Views
 
             if (newsItem == null) return;
 
-            var editWindow = new EditNewsWindow(newsItem);
+            var editWindow = new EditNewsWindow(newsItem, _firebaseService, _client);
             if (editWindow.ShowDialog() == true)
             {
                 try
@@ -247,7 +264,7 @@ namespace NewsClient.Views
                     if (result.IsSuccess)
                     {
                         MessageBox.Show("Аккаунт успешно удален");
-                        new AuthWindow().Show();
+                        new AuthWindow(_firebaseService, _client).Show();
                         Close();
                     }
                     else

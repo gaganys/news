@@ -1,7 +1,7 @@
-﻿<Window x:Class="NewsClient.Views.AuthWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:NewsClient.Views"
+﻿<views:BaseWindow x:Class="NewsClient.Views.AuthWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:views="clr-namespace:NewsClient.Views"
         Title="Аутентификация" Height="350" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
 
     <Grid Margin="20">
@@ -55,4 +55,4 @@
                     BorderBrush="#2196F3" BorderThickness="1" Padding="10,5"/>
         </StackPanel>
     </Grid>
-</Window>
+</views:BaseWindow>

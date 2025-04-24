@@ -3,11 +3,11 @@ using NewsClient.Services;
 
 namespace NewsClient.Views
 {
-    public partial class AuthWindow : Window
+    public partial class AuthWindow : BaseWindow
     {
         private readonly FirebaseAuthService _authService;
 
-        public AuthWindow()
+        public AuthWindow(FirebaseService firebaseService, Client client) : base(firebaseService, client)
         {
             InitializeComponent();
             _authService = new FirebaseAuthService();
@@ -29,7 +29,7 @@ namespace NewsClient.Views
             var userId = result.Auth.User.LocalId;
 
             // Переход в окно с новостями
-            var newsWindow = new NewsWindow(userId);
+            var newsWindow = new NewsWindow(userId, FirebaseService, WebSocketClient);
             newsWindow.Show();
             Close();
         }

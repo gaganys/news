@@ -10,14 +10,16 @@ namespace NewsClient.Views
     {
         private readonly NewsItem _originalNewsItem;
         private readonly FirebaseService _firestoreService;
+        private readonly Client _client;
 
         public NewsItem EditedNewsItem { get; private set; }
 
-        public EditNewsWindow(NewsItem newsItem)
+        public EditNewsWindow(NewsItem newsItem, FirebaseService firebaseService, Client client)
         {
             InitializeComponent();
-            _originalNewsItem = newsItem;
-            _firestoreService = new FirebaseService("newsdistributionsystem");
+            _originalNewsItem = newsItem ?? throw new ArgumentNullException(nameof(newsItem));
+            _firestoreService = firebaseService ?? throw new ArgumentNullException(nameof(firebaseService));
+            _client = client ?? throw new ArgumentNullException(nameof(client));
 
             // Инициализация полей
             TitleTextBox.Text = _originalNewsItem.Title;
@@ -50,6 +52,8 @@ namespace NewsClient.Views
                 };
 
                 await _firestoreService.UpdateNewsAsync(EditedNewsItem);
+                await _client.UpdateNewsAsync(EditedNewsItem);
+                
                 DialogResult = true;
                 Close();
             }

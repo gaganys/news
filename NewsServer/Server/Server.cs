@@ -338,13 +338,6 @@ namespace NewsServer
                     return;
                 }
 
-                if (!_newsArchive.TryGetValue(documentId, out NewsItem existing) ||
-                   (existing.UserId != null && existing.UserId != clientInfo.UserId))
-                {
-                    await SendToClientAsync(clientInfo, new { Type = "error", Message = "News not found or unauthorized" });
-                    return;
-                }
-
                 if (_newsArchive.TryRemove(documentId, out NewsItem _))
                 {
                     await BroadcastAsync(new { Type = "delete", DocumentId = documentId });
@@ -449,17 +442,61 @@ namespace NewsServer
         {
             if (_disposed) return;
 
-            _cts.Cancel();
-            _listener.Stop();
-            _listener.Close();
-
-            foreach (var client in _clients.Values)
+            try
             {
-                client.WebSocket?.Dispose();
-            }
+                // Отменяем все операции
+                _cts.Cancel();
 
-            _disposed = true;
-            GC.SuppressFinalize(this);
+                // Останавливаем listener
+                if (_listener.IsListening)
+                {
+                    _listener.Stop();
+                }
+                _listener.Close();
+
+                // Закрываем все WebSocket соединения
+                var closeTasks = _clients.Values.Select(client => 
+                {
+                    try
+                    {
+                        if (client.WebSocket?.State == WebSocketState.Open)
+                        {
+                            return client.WebSocket.CloseAsync(
+                                WebSocketCloseStatus.NormalClosure,
+                                "Server shutdown",
+                                CancellationToken.None);
+                        }
+                        return Task.CompletedTask;
+                    }
+                    catch
+                    {
+                        return Task.CompletedTask;
+                    }
+                }).ToArray();
+
+                // Ожидаем завершения закрытия соединений с таймаутом
+                Task.WaitAll(closeTasks, TimeSpan.FromSeconds(5));
+
+                // Освобождаем все ресурсы
+                foreach (var client in _clients.Values)
+                {
+                    client.WebSocket?.Dispose();
+                }
+                _clients.Clear();
+
+                _broadcastSemaphore?.Dispose();
+                _cts?.Dispose();
+            }
+            finally
+            {
+                _disposed = true;
+                GC.SuppressFinalize(this);
+            }
+        }
+
+        ~Server()
+        {
+            Dispose();
         }
     }
 }
