@@ -1,0 +1,57 @@
+﻿<Window x:Class="NewsClient.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Новости - Подключение" 
+        Height="250" Width="400"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" 
+                   Text="Подключение к серверу" 
+                   FontSize="18" 
+                   FontWeight="Bold"
+                   Foreground="#333333"/>
+
+        <!-- Поле ввода IP -->
+        <TextBlock Grid.Row="2" 
+                   Text="IP сервера:" 
+                   Foreground="#555555"
+                   FontWeight="SemiBold"
+                   VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="2" 
+                 x:Name="txtServerIP" 
+                 Height="30" 
+                 Margin="100,0,0,0" 
+                 Padding="5"
+                 Text="localhost"
+                 BorderBrush="#B0B0B0" 
+                 BorderThickness="1"
+                 Background="White"/>
+
+        <!-- Кнопка подключения -->
+        <Button Grid.Row="6" 
+                Content="Подключиться" 
+                Click="Connect_Click"
+                Background="#4CAF50" 
+                Foreground="White"
+                FontWeight="Bold"
+                Width="120" 
+                Height="35"
+                BorderThickness="0"
+                HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

@@ -1,0 +1,212 @@
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.AssemblyReference.cache
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\MainWindow.g.cs
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\NewsWindow.g.cs
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\App.g.cs
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient_MarkupCompile.cache
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient_MarkupCompile.lref
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\NewsClient.exe.config
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\NewsClient.exe
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\NewsClient.pdb
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Firebase.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\LiteDB.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Newtonsoft.Json.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Buffers.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Memory.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Numerics.Vectors.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Reactive.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Text.Encodings.Web.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.ValueTuple.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Firebase.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\LiteDB.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Options.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\Newtonsoft.Json.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Buffers.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Memory.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Numerics.Vectors.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Reactive.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Text.Encodings.Web.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.ValueTuple.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\MainWindow.baml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\NewsWindow.baml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.g.resources
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.Properties.Resources.resources
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.GenerateResource.cache
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.CoreCompileInputs.cache
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.CopyComplete
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.exe
+D:\Курсовая КСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\grpc_csharp_ext.x86.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\grpc_csharp_ext.x64.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\libgrpc_csharp_ext.x64.so
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\libgrpc_csharp_ext.x64.dylib
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\NewsClient.exe.config
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\NewsClient.exe
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\NewsClient.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Firebase.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.CommonProtos.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.Gax.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.Gax.Grpc.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.Auth.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.Core.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Firestore.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Firestore.V1.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Location.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.LongRunning.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Protobuf.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Auth.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Core.Api.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Core.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Net.Client.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Net.Common.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\LiteDB.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Options.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Newtonsoft.Json.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Buffers.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.CodeDom.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Collections.Immutable.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Linq.Async.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Memory.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Net.Http.WinHttpHandler.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Numerics.Vectors.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Reactive.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Text.Encodings.Web.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.ValueTuple.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Firebase.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.CommonProtos.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.CommonProtos.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.Gax.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.Gax.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.Gax.Grpc.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Api.Gax.Grpc.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.Auth.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.Auth.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.Core.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Apis.Core.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Firestore.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Firestore.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Firestore.V1.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Firestore.V1.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Location.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Cloud.Location.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.LongRunning.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.LongRunning.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Protobuf.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Google.Protobuf.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Auth.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Auth.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Core.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Core.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Core.Api.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Core.Api.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Net.Client.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Net.Client.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Net.Common.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Grpc.Net.Common.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\LiteDB.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Options.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Newtonsoft.Json.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Buffers.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.CodeDom.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Collections.Immutable.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Linq.Async.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Memory.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Net.Http.WinHttpHandler.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Numerics.Vectors.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Reactive.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Text.Encodings.Web.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\System.ValueTuple.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.AssemblyReference.cache
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\MainWindow.baml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\NewsWindow.baml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\MainWindow.g.cs
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\NewsWindow.g.cs
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\App.g.cs
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient_Content.g.cs
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient_MarkupCompile.cache
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.g.resources
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.Properties.Resources.resources
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.GenerateResource.cache
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.CoreCompileInputs.cache
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.csproj.CopyComplete
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.exe
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\AuthWindow.g.cs
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\NewsClient_MarkupCompile.lref
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Firebase.Auth.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\AuthWindow.baml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\EditNewsWindow.baml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\EditNewsWindow.g.cs

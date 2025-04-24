@@ -1,0 +1,92 @@
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\NewsServer.exe.config
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\NewsServer.exe
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\NewsServer.pdb
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Net.Http.Headers.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Newtonsoft.Json.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Buffers.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Memory.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Numerics.Vectors.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Text.Encodings.Web.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.ValueTuple.dll
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Options.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Net.Http.Headers.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\Newtonsoft.Json.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Buffers.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Memory.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Net.WebSockets.WebSocketProtocol.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Numerics.Vectors.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Text.Encodings.Web.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.ValueTuple.xml
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.csproj.AssemblyReference.cache
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.csproj.CoreCompileInputs.cache
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.csproj.CopyComplete
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.exe
+D:\Курсовая КСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\NewsServer.exe.config
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\NewsServer.exe
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\NewsServer.pdb
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Options.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Net.Http.Headers.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Newtonsoft.Json.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Buffers.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Memory.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Numerics.Vectors.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Text.Encodings.Web.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.ValueTuple.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Options.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Microsoft.Net.Http.Headers.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\Newtonsoft.Json.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Buffers.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Memory.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Net.WebSockets.WebSocketProtocol.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Numerics.Vectors.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Text.Encodings.Web.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\bin\Debug\System.ValueTuple.xml
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.csproj.AssemblyReference.cache
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.csproj.CoreCompileInputs.cache
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.csproj.CopyComplete
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.exe
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsServer\obj\Debug\NewsServer.pdb

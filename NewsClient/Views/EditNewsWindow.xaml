@@ -1,0 +1,42 @@
+﻿<Window x:Class="NewsClient.Views.EditNewsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактировать новость" Height="400" Width="500" 
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Редактирование новости" FontSize="18" FontWeight="Bold" 
+                       Margin="0,0,0,15" Foreground="#333"/>
+
+            <TextBlock Text="Заголовок" Foreground="#555" FontWeight="Bold" Margin="5,0"/>
+            <TextBox x:Name="TitleTextBox" Margin="0,0,0,15" Padding="8" 
+                     BorderBrush="#B0B0B0" BorderThickness="1" Background="White"/>
+
+            <TextBlock Text="Содержание" Foreground="#555" FontWeight="Bold" Margin="5,0"/>
+            <TextBox x:Name="ContentTextBox" Margin="0,0,0,15" Padding="8" 
+                     AcceptsReturn="True" MinHeight="100" VerticalScrollBarVisibility="Auto"
+                     BorderBrush="#B0B0B0" BorderThickness="1" Background="White"/>
+
+            <TextBlock Text="Категория" Foreground="#555" FontWeight="Bold" Margin="5,0"/>
+            <ComboBox x:Name="CategoryComboBox" Margin="0,0,0,20" Padding="5"
+                      BorderBrush="#B0B0B0" BorderThickness="1" Background="White">
+                <ComboBoxItem Content="Технологии"/>
+                <ComboBoxItem Content="Политика"/>
+                <ComboBoxItem Content="Спорт"/>
+                <ComboBoxItem Content="Экономика"/>
+            </ComboBox>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Отмена" Click="CancelButton_Click" 
+                        Background="#B0B0B0" Foreground="White" FontWeight="Bold"
+                        Padding="12,5" Margin="0,0,10,0" Width="100" BorderThickness="0"/>
+
+                <Button Content="Сохранить" Click="SaveButton_Click" 
+                        Background="#4CAF50" Foreground="White" FontWeight="Bold"
+                        Padding="12,5" Width="100" BorderThickness="0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

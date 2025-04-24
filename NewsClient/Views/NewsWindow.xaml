@@ -1,0 +1,148 @@
+﻿<Window x:Class="NewsClient.Views.NewsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Новости" Height="600" Width="800" 
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Grid Margin="15">
+        <TabControl BorderThickness="0">
+            <!-- Стиль для TabItem -->
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border Name="Border" BorderThickness="0" Padding="10,5">
+                                    <ContentPresenter ContentSource="Header"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Border" Property="Background" Value="#4CAF50"/>
+                                        <Setter TargetName="Border" Property="TextElement.Foreground" Value="White"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+
+            <!-- Вкладка всех новостей -->
+            <TabItem Header="Лента новостей">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TextBlock Text="Последние новости" FontSize="18" FontWeight="Bold" 
+                                   Margin="0,0,0,15" Foreground="#333"/>
+
+                        <ListView x:Name="NewsListView" ItemsSource="{Binding AllNewsItems}" 
+                                  BorderThickness="0" Background="Transparent" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Margin="0,0,0,10" Background="White" 
+                                            CornerRadius="5" Padding="15" 
+                                            BorderBrush="#E0E0E0" BorderThickness="1">
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Title}" FontWeight="Bold" 
+                                                       FontSize="14" Foreground="#333"/>
+                                            <TextBlock Text="{Binding Content}" Margin="0,5,0,0" 
+                                                       TextWrapping="Wrap" Foreground="#555"/>
+                                            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                                                <TextBlock Text="{Binding Category}" 
+                                                           Foreground="#4CAF50" FontWeight="SemiBold"/>
+                                                <TextBlock Text=" • " Foreground="#999"/>
+                                                <TextBlock Text="{Binding PublishDate, StringFormat=dd.MM.yyyy HH:mm}" 
+                                                           Foreground="#999"/>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <!-- Вкладка моих новостей -->
+            <TabItem Header="Мои новости">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <ListView x:Name="UserNewsListView"  ItemsSource="{Binding UserNewsItems}" 
+                                  BorderThickness="0" Background="Transparent" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Margin="0,0,0,10" Background="White" 
+                                            CornerRadius="5" Padding="15" 
+                                            BorderBrush="#E0E0E0" BorderThickness="1">
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Title}" FontWeight="Bold" 
+                                                       FontSize="14" Foreground="#333"/>
+                                            <TextBlock Text="{Binding Content}" Margin="0,5,0,0" 
+                                                       TextWrapping="Wrap" Foreground="#555"/>
+                                            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                                                <TextBlock Text="{Binding Category}" 
+                                                           Foreground="#4CAF50" FontWeight="SemiBold"/>
+                                                <TextBlock Text=" • " Foreground="#999"/>
+                                                <TextBlock Text="{Binding PublishDate, StringFormat=dd.MM.yyyy HH:mm}" 
+                                                           Foreground="#999"/>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                                                <Button Content="Редактировать" Click="EditNews_Click" 
+                                                        Tag="{Binding DocumentId}"
+                                                        Background="#2196F3" Foreground="White" 
+                                                        Padding="8,3" Margin="0,0,10,0" BorderThickness="0"/>
+                                                <Button Content="Удалить" Click="DeleteNews_Click" 
+                                                        Tag="{Binding DocumentId}"
+                                                        Background="#F44336" Foreground="White" 
+                                                        Padding="8,3" BorderThickness="0"/>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <!-- Вкладка добавления новости -->
+            <TabItem Header="Добавить новость">
+                <StackPanel Margin="0,10,0,0">
+                    <TextBlock Text="Заголовок" Foreground="#555" FontWeight="Bold" Margin="5,0"/>
+                    <TextBox x:Name="TitleTextBox" Margin="0,0,0,15" Padding="8" 
+                             BorderBrush="#B0B0B0" BorderThickness="1" Background="White"/>
+
+                    <TextBlock Text="Содержание" Foreground="#555" FontWeight="Bold" Margin="5,0"/>
+                    <TextBox x:Name="ContentTextBox" Margin="0,0,0,15" Padding="8" 
+                             AcceptsReturn="True" MinHeight="100" VerticalScrollBarVisibility="Auto"
+                             BorderBrush="#B0B0B0" BorderThickness="1" Background="White"/>
+
+                    <TextBlock Text="Категория" Foreground="#555" FontWeight="Bold" Margin="5,0"/>
+                    <ComboBox x:Name="CategoryComboBox" Margin="0,0,0,20" Padding="5"
+                              BorderBrush="#B0B0B0" BorderThickness="1" Background="White">
+                        <ComboBoxItem Content="Технологии"/>
+                        <ComboBoxItem Content="Политика"/>
+                        <ComboBoxItem Content="Спорт"/>
+                        <ComboBoxItem Content="Экономика"/>
+                    </ComboBox>
+
+                    <Button Content="Опубликовать" Click="AddNews_Click" 
+                            Background="#4CAF50" Foreground="White" FontWeight="Bold"
+                            Padding="12,5" HorizontalAlignment="Stretch" BorderThickness="0"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Вкладка аккаунта -->
+            <TabItem Header="Аккаунт">
+                <StackPanel Margin="0,20">
+                    <Button Content="Удалить аккаунт" Click="DeleteAccount_Click"
+                            Background="#F44336" Foreground="White" FontWeight="Bold"
+                            Padding="12,5" HorizontalAlignment="Stretch" BorderThickness="0"/>
+
+                    <TextBlock Text="Это действие нельзя отменить!" 
+                               Foreground="#F44336" Margin="0,15,0,0" TextAlignment="Center"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
