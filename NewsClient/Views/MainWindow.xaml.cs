@@ -1,7 +1,9 @@
 ﻿using System;
-using NewsClient.Services;
 using System.Windows;
-using NewsClient.Utility;
+using NewsClient.Services.Auth;
+using NewsClient.Services.Network;
+using NewsClient.Utils;
+using NewsClient.ViewModels;
 
 namespace NewsClient.Views
 {
@@ -14,21 +16,19 @@ namespace NewsClient.Views
 
         private async void Connect_Click(object sender, RoutedEventArgs e)
         {
-            var ip = txtServerIP.Text;
-            var client = new Client(ip, AppConstants.WebSocketPort);
-
             try
             {
-                await client.ConnectAsync();
-                var firebaseService = new FirebaseService(AppConstants.FirebaseProjectId, client);
-
-                var authWindow = new AuthWindow(firebaseService, client);
+                var tcpClient = ServiceLocator.GetService<NewsTcpClient>();
+                await tcpClient.ConnectAsync(txtServerIP.Text, AppConstants.ServerPort);
+        
+                var authWindow = ServiceLocator.GetService<AuthWindow>();
                 authWindow.Show();
                 Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка подключения: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка подключения: {ex.Message}", "Ошибка", 
+                    MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
-using System.Windows;
-using NewsClient.Services;
+﻿using System.Windows;
+using NewsClient.Utils;
 using NewsClient.Views;
 
 namespace NewsClient
@@ -12,7 +10,8 @@ namespace NewsClient
         {
             base.OnStartup(e);
 
-            var mainWindow = new Views.MainWindow();
+           
+            var mainWindow = ServiceLocator.GetService<MainWindow>();
             mainWindow.Show();
         }
     }

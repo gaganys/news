@@ -1,18 +1,17 @@
 // BaseWindow.cs
 using System.Windows;
 using NewsClient.Services;
+using NewsClient.Services.Network;
 
 namespace NewsClient.Views
 {
     public class BaseWindow : Window
     {
-        protected readonly FirebaseService FirebaseService;
-        protected readonly Client WebSocketClient;
+        protected readonly NewsTcpClient TcpClient;
 
-        public BaseWindow(FirebaseService firebaseService, Client client)
+        public BaseWindow(NewsTcpClient tcpClient)
         {
-            FirebaseService = firebaseService;
-            WebSocketClient = client;
+            TcpClient = tcpClient;
             
             // Общие настройки для всех окон
             WindowStartupLocation = WindowStartupLocation.CenterScreen;

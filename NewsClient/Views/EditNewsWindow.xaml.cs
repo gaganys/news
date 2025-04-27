@@ -3,23 +3,22 @@ using System.Windows;
 using NewsClient.Models;
 using System.Windows.Controls;
 using System;
+using NewsClient.Services.Network;
 
 namespace NewsClient.Views
 {
     public partial class EditNewsWindow : Window
     {
         private readonly NewsItem _originalNewsItem;
-        private readonly FirebaseService _firestoreService;
-        private readonly Client _client;
+        private readonly NewsTcpClient _tcpClient;
 
         public NewsItem EditedNewsItem { get; private set; }
 
-        public EditNewsWindow(NewsItem newsItem, FirebaseService firebaseService, Client client)
+        public EditNewsWindow(NewsItem newsItem, NewsTcpClient tcpClient)
         {
             InitializeComponent();
             _originalNewsItem = newsItem ?? throw new ArgumentNullException(nameof(newsItem));
-            _firestoreService = firebaseService ?? throw new ArgumentNullException(nameof(firebaseService));
-            _client = client ?? throw new ArgumentNullException(nameof(client));
+            _tcpClient = tcpClient ?? throw new ArgumentNullException(nameof(tcpClient));
 
             // Инициализация полей
             TitleTextBox.Text = _originalNewsItem.Title;
@@ -51,8 +50,7 @@ namespace NewsClient.Views
                     DocumentId = _originalNewsItem.DocumentId
                 };
 
-                await _firestoreService.UpdateNewsAsync(EditedNewsItem);
-                await _client.UpdateNewsAsync(EditedNewsItem);
+                await _tcpClient.UpdateNewsAsync(EditedNewsItem);
                 
                 DialogResult = true;
                 Close();

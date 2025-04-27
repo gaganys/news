@@ -211,3 +211,5 @@ D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\Au
 D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\EditNewsWindow.baml
 D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\Views\EditNewsWindow.g.cs
 D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\КурсоваяКСиС\NewsDistributionSystem\NewsClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml

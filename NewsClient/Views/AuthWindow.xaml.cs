@@ -1,67 +1,31 @@
-﻿using System.Windows;
-using NewsClient.Services;
+﻿using NewsClient.Services.Auth;
+using NewsClient.Services.Network;
+using NewsClient.Utils;
+using NewsClient.ViewModels;
 
 namespace NewsClient.Views
 {
     public partial class AuthWindow : BaseWindow
     {
-        private readonly FirebaseAuthService _authService;
-
-        public AuthWindow(FirebaseService firebaseService, Client client) : base(firebaseService, client)
+        public AuthWindow(NewsTcpClient tcpClient) : base(tcpClient)
         {
             InitializeComponent();
-            _authService = new FirebaseAuthService();
-        }
-
-        private async void Login_Click(object sender, RoutedEventArgs e)
-        {
-            var email = txtEmail.Text;
-            var password = txtPassword.Password;
-
-            var result = await _authService.Login(email, password);
-
-            if (!result.IsSuccess)
+            // Явная инициализация ViewModel
+            var authService = ServiceLocator.GetService<IAuthService>();
+            DataContext = new AuthViewModel(authService, tcpClient);
+                
+            // Привязка PasswordBox к ViewModel
+            txtPassword.PasswordChanged += (s, e) => 
             {
-                MessageBox.Show(result.ErrorMessage, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            var userId = result.Auth.User.LocalId;
-
-            // Переход в окно с новостями
-            var newsWindow = new NewsWindow(userId, FirebaseService, WebSocketClient);
-            newsWindow.Show();
-            Close();
-        }
-
-        private async void Register_Click(object sender, RoutedEventArgs e)
-        {
-            if (RepeatPasswordContainer.Visibility == Visibility.Collapsed)
+                if (DataContext is AuthViewModel vm)
+                    vm.Password = txtPassword.Password;
+            };
+            
+            txtRepeatPassword.PasswordChanged += (s, e) => 
             {
-                RepeatPasswordContainer.Visibility = Visibility.Visible;
-                return;
-            }
-
-            var email = txtEmail.Text;
-            var password = txtPassword.Password;
-            var repeatPassword = txtRepeatPassword.Password;
-
-            if (password != repeatPassword)
-            {
-                MessageBox.Show("Пароли не совпадают.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            var result = await _authService.Register(email, password);
-
-            if (!result.IsSuccess)
-            {
-                MessageBox.Show(result.ErrorMessage, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            MessageBox.Show("Регистрация успешна! Вы можете войти.", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
-            RepeatPasswordContainer.Visibility = Visibility.Collapsed;
+                if (DataContext is AuthViewModel vm)
+                    vm.RepeatPassword = txtRepeatPassword.Password;
+            };
         }
     }
 }

@@ -7,12 +7,33 @@ namespace NewsServer
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Укажите IP сервера (по умолчанию: localhost):");
-            var ip = Console.ReadLine();
-            if (string.IsNullOrEmpty(ip)) ip = "localhost";
+            var config = new ServerConfig
+            {
+                FirebaseCredentialsPath = "D:\\КурсоваяКСиС\\NewsDistributionSystem\\NewsServer\\credentials\\newsdistributionsystem-firebase-adminsdk-fbsvc-15c304d0b6.json",
+                FirebaseProjectId = "newsdistributionsystem",
+                ServerIp = "127.0.0.1",
+                ServerPort = 8080
+            };
 
-            var server = new Server(ip, 8080);
-            await server.StartAsync();
+            try
+            {
+                config.Validate();
+                var server = new Server(config);  
+            
+                Console.CancelKeyPress += (sender, e) => 
+                {
+                    e.Cancel = true;
+                    server.StopAsync().Wait();
+                };
+                
+                await server.StartAsync();
+
+            } 
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Configuration error: {ex.Message}");
+                Environment.Exit(1);
+            }
         }
     }
 }
