@@ -45,7 +45,7 @@ namespace NewsClient.ViewModels
         {
             try
             {
-                await _tcpClient.ConnectAsync();
+                await _tcpClient.ConnectAsync(AppConstants.DefaultServerIp, AppConstants.ServerPort);
                 await _tcpClient.GetAllNewsAsync();
             }
             catch (Exception ex)

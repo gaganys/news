@@ -1,4 +1,5 @@
-﻿using NewsClient.Services.Auth;
+﻿using System;
+using NewsClient.Services.Auth;
 using NewsClient.Services.Network;
 using NewsClient.Utils;
 using NewsClient.ViewModels;
@@ -9,7 +10,10 @@ namespace NewsClient.Views
     {
         public AuthWindow(NewsTcpClient tcpClient) : base(tcpClient)
         {
+            if (tcpClient == null) throw new ArgumentNullException(nameof(tcpClient));
+            
             InitializeComponent();
+            
             // Явная инициализация ViewModel
             var authService = ServiceLocator.GetService<IAuthService>();
             DataContext = new AuthViewModel(authService, tcpClient);

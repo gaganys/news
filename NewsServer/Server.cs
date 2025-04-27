@@ -439,31 +439,22 @@ namespace NewsServer
 
             try
             {
-                _cts.Cancel();
-
-                if (_listener.Server != null && _listener.Server.IsBound)
-                    _listener.Stop();
-
-                var closeTasks = _clients.Values.Select(client => 
+                _cts?.Cancel();
+        
+                // Добавьте проверку на null
+                if (_listener?.Server != null && _listener.Server.IsBound)
                 {
-                    try
-                    {
-                        if (client.TcpClient?.Connected == true)
-                            client.TcpClient.Close();
-                        return Task.CompletedTask;
-                    }
-                    catch
-                    {
-                        return Task.CompletedTask;
-                    }
-                }).ToArray();
-
-                Task.WaitAll(closeTasks, TimeSpan.FromSeconds(5));
+                    _listener.Stop();
+                }
 
                 foreach (var client in _clients.Values)
                 {
-                    client.Stream?.Dispose();
-                    client.TcpClient?.Dispose();
+                    try
+                    {
+                        client.Stream?.Dispose();
+                        client.TcpClient?.Dispose();
+                    }
+                    catch { /* Игнорируем ошибки при закрытии */ }
                 }
                 _clients.Clear();
 
@@ -473,7 +464,6 @@ namespace NewsServer
             finally
             {
                 _disposed = true;
-                GC.SuppressFinalize(this);
             }
         }
 

@@ -33,7 +33,10 @@ namespace NewsClient.Utils
 
             // Регистрация окон
             services.AddTransient<MainWindow>();
-            services.AddTransient<AuthWindow>();
+            services.AddTransient<AuthWindow>(provider =>
+                new AuthWindow(
+                    provider.GetRequiredService<NewsTcpClient>()
+                ));
             services.AddTransient<NewsWindow>(provider => 
             {
                 var tcpClient = provider.GetRequiredService<NewsTcpClient>();

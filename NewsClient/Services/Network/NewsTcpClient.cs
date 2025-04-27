@@ -32,6 +32,8 @@ namespace NewsClient.Services.Network
         
         public async Task ConnectAsync(string ip, int port)
         {
+            if (string.IsNullOrEmpty(ip)) throw new ArgumentNullException(nameof(ip));
+            
             Console.WriteLine($"Попытка подключения к {ip}:{port}");
             
             if (_tcpClient?.Connected == true)
@@ -188,10 +190,11 @@ namespace NewsClient.Services.Network
         {
             if (_disposed) return;
 
-            _cts.Cancel();
+            _cts?.Cancel();
             _stream?.Dispose();
             _tcpClient?.Dispose();
             _disposed = true;
+            GC.SuppressFinalize(this);
         }
     }
 }

@@ -198,7 +198,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="credentials\newsdistributionsystem-firebase-adminsdk-fbsvc-15c304d0b6.json" />
     <Content Include="protos\google\api\annotations.proto" />
     <Content Include="protos\google\api\auth.proto" />
     <Content Include="protos\google\api\backend.proto" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace NewsServer
@@ -9,7 +10,7 @@ namespace NewsServer
         {
             var config = new ServerConfig
             {
-                FirebaseCredentialsPath = "D:\\КурсоваяКСиС\\NewsDistributionSystem\\NewsServer\\credentials\\newsdistributionsystem-firebase-adminsdk-fbsvc-15c304d0b6.json",
+                FirebaseCredentialsPath = Path.Combine("credentials", "newsdistributionsystem-firebase-adminsdk-fbsvc-15c304d0b6.json"),
                 FirebaseProjectId = "newsdistributionsystem",
                 ServerIp = "127.0.0.1",
                 ServerPort = 8080

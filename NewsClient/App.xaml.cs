@@ -10,6 +10,7 @@ namespace NewsClient
         {
             base.OnStartup(e);
 
+            
            
             var mainWindow = ServiceLocator.GetService<MainWindow>();
             mainWindow.Show();

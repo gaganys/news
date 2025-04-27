@@ -18,10 +18,17 @@ namespace NewsClient.Views
         {
             try
             {
+                string serverIp = txtServerIP.Text.Trim();
+                if (string.IsNullOrEmpty(serverIp))
+                {
+                    MessageBox.Show("Введите IP сервера!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                
                 var tcpClient = ServiceLocator.GetService<NewsTcpClient>();
-                await tcpClient.ConnectAsync(txtServerIP.Text, AppConstants.ServerPort);
+                await tcpClient.ConnectAsync(serverIp, AppConstants.ServerPort);
         
-                var authWindow = ServiceLocator.GetService<AuthWindow>();
+                var authWindow = new AuthWindow(tcpClient);
                 authWindow.Show();
                 Close();
             }
